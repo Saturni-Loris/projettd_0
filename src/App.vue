@@ -186,10 +186,7 @@ import Card from "./components/card.vue";
               "
             >
               <RouterLink to="/"
-                ><img
-                  class="w-16"
-                  src="../src/assets/logoWerplayblanc.svg"
-                  alt=""
+                ><img class="w-16" src="../src/assets/logoFestival.svg" alt=""
               /></RouterLink>
             </h6>
           </div>

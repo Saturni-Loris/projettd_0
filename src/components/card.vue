@@ -12,10 +12,8 @@
         xl:grid-cols-4
       "
     >
-      <div
-        class="relative cursor-pointer overflow-hidden rounded-t-3xl shadow-lg"
-      >
-        <img class="-3xl w-full object-cover" :src="image" alt="sport" />
+      <div class="relative cursor-pointer overflow-hidden shadow-lg">
+        <img class="-3xl w-full object-cover" :src="image" alt="rappeur" />
 
         <div class="absolute bottom-0 right-0 px-6 py-4"></div>
       </div>
@@ -24,7 +22,11 @@
     <figcaption class="relative px-4 py-8">
       <div class="relative flex flex-col">
         <div class="order-first flex items-center pb-4">
-          <h3 class="pr-8 text-2xl font-bold leading-8">
+          <h3 class="pr-2 text-lg font-medium leading-8">
+            {{ jour }}
+          </h3>
+
+          <h3 class="pr-8 text-lg font-bold leading-8">
             {{ date }}
           </h3>
         </div>
@@ -54,6 +56,7 @@ export default {
     description: String,
     nom: String,
     date: String,
+    jour: String,
   },
 };
 </script>
