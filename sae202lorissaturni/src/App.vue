@@ -8,8 +8,9 @@ import Card from "./components/card.vue";
     <nav
       class="
         navbar navbar-expand-lg navbar-white
-        border-orangewerplay border-b-2
+        border-orangewerplay
         bg-bleunuit
+        border-b-2
       "
     >
       <div class="navbar-brand">
@@ -36,34 +37,34 @@ import Card from "./components/card.vue";
               <RouterLink to="/creermatch">Programation</RouterLink>
             </div>
           </li>
-          <hr class="my-2 border-t-2 bg-jaune" />
+          <hr class="bg-jaune my-2 border-t-2" />
           <li class="nav-item">
             <div class="nav-link">
-              <RouterLink to="/matchspopulaire">Artistes</RouterLink>
+              <RouterLink to="/matchspopulaire">artistes</RouterLink>
             </div>
           </li>
-          <hr class="my-2 border-t-2 bg-jaune" />
+          <hr class="bg-jaune my-2 border-t-2" />
 
           <li class="nav-item">
             <div class="nav-link">
               <RouterLink to="/matchspopulaire">Festival</RouterLink>
             </div>
           </li>
-          <hr class="my-2 border-t-2 bg-jaune" />
+          <hr class="bg-jaune my-2 border-t-2" />
 
           <li class="nav-item">
             <div class="nav-link">
               <RouterLink to="/contact">Contact</RouterLink>
             </div>
           </li>
-          <hr class="my-2 border-t-2 bg-jaune" />
+          <hr class="bg-jaune my-2 border-t-2" />
 
           <li class="nav-item">
             <a class="nav-link" href="pages/monCompte.html">Mon Compte</a>
           </li>
         </ul>
 
-        <hr class="my-2 border-t-2 bg-jaune" />
+        <hr class="bg-jaune my-2 border-t-2" />
 
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
@@ -83,7 +84,7 @@ import Card from "./components/card.vue";
                 >Clients</a
               >
 
-              <hr class="my-2 border-t-2 bg-jaune" />
+              <hr class="bg-jaune my-2 border-t-2" />
 
               <a class="dropdown-item" href="pages/abonnement/liste.html"
                 >Abonnements</a
@@ -96,14 +97,13 @@ import Card from "./components/card.vue";
     <RouterView />
   </div>
 
-  <footer class="text-white bg-orangewerplay text-center lg:text-left">
+  <footer class="bg-orangewerplay text-center text-white lg:text-left">
     <div
       class="
-        border-gray-300
         flex
         items-center
         justify-center
-        border-b
+        border-b border-gray-300
         p-6
         lg:justify-between
       "
@@ -112,7 +112,7 @@ import Card from "./components/card.vue";
       <div class="flex justify-center">
         <a
           href="https://www.facebook.com/WerPlayPport/"
-          class="text-gray-600 mr-6"
+          class="mr-6 text-gray-600"
         >
           <svg
             aria-hidden="true"
@@ -132,7 +132,7 @@ import Card from "./components/card.vue";
         </a>
         <a
           href="https://www.twitter.com/werplay_fr/"
-          class="text-gray-600 mr-6"
+          class="mr-6 text-gray-600"
         >
           <svg
             aria-hidden="true"
@@ -152,7 +152,7 @@ import Card from "./components/card.vue";
         </a>
         <a
           href="https://www.instagram.com/werplaysport/"
-          class="text-gray-600 mr-6"
+          class="mr-6 text-gray-600"
         >
           <svg
             aria-hidden="true"
