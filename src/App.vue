@@ -33,20 +33,20 @@ import Card from "./components/card.vue";
         <ul class="navbar-nav">
           <li class="nav-item">
             <div class="nav-link">
-              <RouterLink to="/creermatch">Programation</RouterLink>
+              <RouterLink to="/programmation">Programmation</RouterLink>
             </div>
           </li>
           <hr class="my-2 border-t-2 bg-jaune" />
           <li class="nav-item">
             <div class="nav-link">
-              <RouterLink to="/matchspopulaire">artistes</RouterLink>
+              <RouterLink to="/artistes">Artistes</RouterLink>
             </div>
           </li>
           <hr class="my-2 border-t-2 bg-jaune" />
 
           <li class="nav-item">
             <div class="nav-link">
-              <RouterLink to="/matchspopulaire">Festival</RouterLink>
+              <RouterLink to="/festival">Festival</RouterLink>
             </div>
           </li>
           <hr class="my-2 border-t-2 bg-jaune" />

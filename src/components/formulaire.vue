@@ -4,35 +4,24 @@
     <div class="-mx-3 mb-6 flex flex-wrap">
       <div class="mb-6 w-full px-3 md:mb-0 md:w-1/2">
         <label
-          class="
-            text-gray-700
-            mb-2
-            block
-            text-xs
-            font-bold
-            uppercase
-            tracking-wide
-          "
+          class="mb-2 block text-xs font-bold uppercase tracking-wide"
           for="grid-first-name"
         >
           Nom*
         </label>
         <input
           class="
-            bg-gray-200
-            text-gray-700
-            focus:bg-white
-            border-orangewerplay
             mb-3
             block
             w-full
             appearance-none
             rounded
             border-2
+            bg-bleunuit
             py-3
             px-4
             leading-tight
-            focus:outline-none
+            focus:bg-griswerplay focus:outline-none
           "
           id="grid-first-name"
           type="text"
@@ -57,9 +46,6 @@
         </label>
         <input
           class="
-            bg-gray-200
-            text-gray-700
-            focus:bg-white
             border-orangewerplay
             mb-3
             block
@@ -67,10 +53,11 @@
             appearance-none
             rounded
             border-2
+            bg-bleunuit
             py-3
             px-4
             leading-tight
-            focus:outline-none
+            focus:bg-griswerplay focus:outline-none
           "
           id="grid-first-name"
           type="text"
@@ -96,9 +83,6 @@
         </label>
         <input
           class="
-            bg-gray-200
-            text-gray-700
-            focus:bg-white
             border-orangewerplay
             mb-3
             block
@@ -106,10 +90,11 @@
             appearance-none
             rounded
             border-2
+            bg-bleunuit
             py-3
             px-4
             leading-tight
-            focus:outline-none
+            focus:bg-griswerplay focus:outline-none
           "
           id="grid-first-name"
           type="text"
@@ -137,8 +122,6 @@
         <textarea
           class="
             no-resize
-            text-gray-700
-            border-orangewerplay
             mb-3
             block
             h-48
@@ -147,11 +130,15 @@
             appearance-none
             rounded
             border-2
+            bg-bleunuit
             py-3
             px-4
             leading-tight
+            focus:bg-griswerplay focus:outline-none
           "
           id="message"
+          type="text"
+          placeholder="Votre message ici ..."
         ></textarea>
       </div>
     </div>

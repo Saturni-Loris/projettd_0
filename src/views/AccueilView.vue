@@ -15,7 +15,7 @@
         <card
           jour="Dim"
           date="24 juill."
-          description="Avec ces textes profond, provocateur et impliqué, 6Jays est une tête du festival."
+          description="Avec ces textes profond, provocateur et impliqué, 6Jays sera présent."
           nom="6Jays"
           image="/public/6Jays.png"
         />
@@ -45,93 +45,47 @@
         <card
           jour="Mer"
           date="27 juill."
-          description="Son dernier album  mondialement connu, il était impossible de ne pas inviter FujiPe."
+          description="Son dernier album  mondialement connu, c'est impossible sans FujiPe."
           nom="FujiPe"
           image="/public/FujiPe.png"
         />
       </div>
+    </div>
 
-      <div class="p-3 pt-12">
-        <card
-          jour="Jeu"
-          date="28 juill."
-          description="Du rap pour tous, Gaaris enverra du feu toute la nuit."
-          nom="Gaaris"
-          image="/public/Gaaris.png"
-        />
-      </div>
-
-      <div class="p-3 pt-12">
-        <card
-          jour="Ven"
-          date="29 juill."
-          description="Ambiance planante et apaisante, reposer vous dans les textes de GreeZer."
-          nom="GreeZer"
-          image="/public/GreenZer.png"
-        />
-      </div>
-
-      <div class="p-3 pt-12">
-        <card
-          jour="Sam"
-          date="30 juill."
-          description="Texte cru et impactant, Isham est parmis nous pour le Night of Republique festival!"
-          nom="Isham"
-          image="/public/isham.png"
-        />
-      </div>
-
-      <div class="p-3 pt-12">
-        <card
-          jour="Dim"
-          date="31 juill."
-          description="Comment faire un festival sans TravS ? Parmi nous cette année pour nous faire danser."
-          nom="Travs"
-          image="/public/Travs.png"
-        />
+    <div class="px-28">
+      <div
+        class="
+          relative
+          flex flex-shrink-0 flex-grow-0
+          items-center
+          justify-center
+          gap-2.5
+          self-stretch
+          rounded-md
+          border-2
+          p-2.5
+        "
+      >
+        <p
+          class="
+            flex-shrink-0 flex-grow-0
+            text-left text-base
+            font-semibold
+            text-bleunuit
+          "
+        >
+          <RouterLink to="/">TOUT LES ARTISTES </RouterLink>
+        </p>
       </div>
     </div>
 
-    <div>
-      <lireplus />
-    </div>
-
-    <div class="pb-12">
-      <h1 class="p-8 text-3xl font-bold">
-        <span class="text-orangewerplay">Des questions</span> ?
-      </h1>
-      <div class="grid place-items-center">
-        <img src="../assets/desquestionsphotos.png" alt="Image foot" />
-
-        <div class="-mt-16 pr-40 md:flex">
-          <div class="mb-3 flex rounded-lg p-1 text-xl font-semibold">
-            <button
-              class="
-                text-white
-                bg-orangewerplay
-                rounded-2xl
-                py-2
-                px-16
-                font-bold
-              "
-              type="button"
-            >
-              <RouterLink to="/contact">Ecrivez nous</RouterLink>
-            </button>
-          </div>
-        </div>
-
-        <div class="md:w-2/3"></div>
-      </div>
-    </div>
-
-    <div class="pb-4">
+    <div class="pb-4 pt-16">
       <h1 class="text-rougewerplay p-8 text-center text-3xl font-bold">
         Abonnes-toi pour ne rien manquer !
       </h1>
       <h1 class="pr-8 pl-8 text-center text-sm font-medium">
-        Abonnes-toi pour recevoir toutes les actualités et news de WerPlay en
-        avant-première!
+        Abonnes-toi pour recevoir toutes les actualités et news du festival
+        Night of Republique en avant-première!
       </h1>
     </div>
 
@@ -173,24 +127,31 @@
         </div>
       </div>
 
-      <div class="md:flex md:items-center">
-        <div class="">
-          <button
+      <div class="px-28">
+        <div
+          class="
+            relative
+            flex flex-shrink-0 flex-grow-0
+            items-center
+            justify-center
+            gap-2.5
+            self-stretch
+            rounded-md
+            bg-[#142435]
+            p-2.5
+          "
+        >
+          <p
             class="
               text-white
-              bg-orangewerplay
-              float-right
-              rounded-2xl
-              py-2
-              px-16
-              font-bold
+              flex-shrink-0 flex-grow-0
+              text-left text-base
+              font-semibold
             "
-            type="button"
           >
-            Envoyer
-          </button>
+            JE M'INSCRIT
+          </p>
         </div>
-        <div class="md:w-2/3"></div>
       </div>
 
       <div class="-mx-3 mb-6 flex flex-wrap">
@@ -211,46 +172,12 @@
 
       <p class="text-xs italic text-griswerplay">
         (1) En communiquant mes informations, je consens à être recontacté par
-        voie électronique par WerPlay. Ces données seront conservées durant 30
-        jours afin de pouvoir traiter au mieux ma demande. Je pourrai faire
-        modifier ou supprimer mes informations sur simple demande. En savoir
-        plus.
+        voie électronique par le festival Night of Republique. Ces données
+        seront conservées durant 30 jours afin de pouvoir traiter au mieux ma
+        demande. Je pourrai faire modifier ou supprimer mes informations sur
+        simple demande. En savoir plus.
       </p>
     </form>
-
-    <div class="grid place-items-center">
-      <img class="p-8" src="../assets/basketpanier.png" alt="Image foot" />
-    </div>
-
-    <div class="pb-12">
-      <h1 class="p-8 text-center text-3xl font-bold">
-        <span class="text-orangewerplay">Et</span> maintenant ?
-      </h1>
-      <h1 class="pr-8 pl-8 text-center text-sm font-medium">
-        On attent quoi pour rejoindre un match ?
-      </h1>
-
-      <div class="flex flex-col items-center justify-center p-8">
-        <div class="">
-          <button
-            class="
-              text-white
-              bg-orangewerplay
-              rounded-2xl
-              py-2
-              px-16
-              font-bold
-              md:w-12
-              lg:w-52
-            "
-            type="button"
-          >
-            <RouterLink to="/matchspopulaire">Rejoindre un match</RouterLink>
-          </button>
-        </div>
-        <div class="md:w-2/3"></div>
-      </div>
-    </div>
   </div>
 </template> 
 
@@ -258,7 +185,7 @@
 
 <script>
 import card from "../components/card.vue";
-import card from "../components/lireplus.vue";
+import lireplus from "../components/lireplus.vue";
 
 export default {
   components: { card, lireplus },
