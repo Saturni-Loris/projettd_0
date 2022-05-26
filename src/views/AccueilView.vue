@@ -178,6 +178,12 @@
         simple demande. En savoir plus.
       </p>
     </form>
+
+    <div class="px-10">
+      <hr class="my-10 border-t-2 bg-jaune" />
+
+      <hr class="my-10 border-t-2 bg-jaune" />
+    </div>
   </div>
 </template> 
 

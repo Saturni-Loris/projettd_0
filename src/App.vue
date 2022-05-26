@@ -18,7 +18,7 @@ import Card from "./components/card.vue";
         /></RouterLink>
       </div>
       <button
-        class="navbar-toggler bg-griswerplay"
+        class="navbar-toggler bg-jaune"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
