@@ -74,7 +74,7 @@
             text-bleunuit
           "
         >
-          <RouterLink to="/">TOUT LES ARTISTES </RouterLink>
+          <RouterLink to="artistes">TOUT LES ARTISTES </RouterLink>
         </p>
       </div>
     </div>
