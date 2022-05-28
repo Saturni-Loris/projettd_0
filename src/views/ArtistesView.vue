@@ -7,108 +7,100 @@
     <div
       class="
         grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(300px,1fr))]
+        p-6
       "
     >
       <div class="p-3 pt-12">
-        <card
-          jour="Dim"
-          date="24 juill."
-          description="Avec ces textes profond, provocateur et impliqué, 6Jays sera présent."
-          nom="6Jays"
-          image="/public/6Jays.png"
-        />
+        <RouterLink to="/jays">
+          <cardartiste
+            name="6Jays"
+            image="/public/6Jays.png"
+            date="24"
+            jour="juill."
+        /></RouterLink>
       </div>
 
       <div class="p-3 pt-12">
-        <card
-          jour="Lun"
-          date="25 juill."
-          description="Implanté dans la musique depuis à peine 1 an. Balmain est la pour vous."
-          nom="Balmain"
-          image="/public/Balmain.png"
-        />
+        <RouterLink to="/balmain">
+          <cardartiste
+            name="Balmain"
+            image="/public/Balmain.png"
+            date="25"
+            jour="juill."
+        /></RouterLink>
       </div>
 
       <div class="p-3 pt-12">
-        <card
-          jour="Mar"
-          date="26 juill."
-          description="Comment faire un festival sans Cam ? Il sera la, et vous?"
-          nom="Cam"
-          image="/public/Cam.png"
-        />
+        <RouterLink to="/fujipe">
+          <cardartiste
+            name="FujiPe"
+            image="/public/FujiPe.png"
+            date="26"
+            jour="juill."
+        /></RouterLink>
       </div>
 
       <div class="p-3 pt-12">
-        <card
-          jour="Mer"
-          date="27 juill."
-          description="Son dernier album  mondialement connu, il était impossible de ne pas inviter FujiPe."
-          nom="FujiPe"
-          image="/public/FujiPe.png"
-        />
+        <RouterLink to="/gaaris">
+          <cardartiste
+            name="Gaaris"
+            image="/public/Gaaris.png"
+            date="27"
+            jour="juill."
+        /></RouterLink>
       </div>
 
       <div class="p-3 pt-12">
-        <card
-          jour="Jeu"
-          date="28 juill."
-          description="Du rap pour tous, Gaaris enverra du feu toute la nuit."
-          nom="Gaaris"
-          image="/public/Gaaris.png"
-        />
+        <RouterLink to="/greenzer">
+          <cardartiste
+            name="GreenZer"
+            image="/public/GreenZer.png"
+            date="28"
+            jour="juill."
+        /></RouterLink>
       </div>
 
       <div class="p-3 pt-12">
-        <card
-          jour="Ven"
-          date="29 juill."
-          description="Ambiance planante et apaisante, reposer vous dans les textes de GreeZer."
-          nom="GreeZer"
-          image="/public/GreenZer.png"
-        />
+        <RouterLink to="/isham">
+          <cardartiste
+            name="Isham"
+            image="/public/Isham.png"
+            date="29"
+            jour="juill."
+        /></RouterLink>
       </div>
 
       <div class="p-3 pt-12">
-        <card
-          jour="Sam"
-          date="30 juill."
-          description="Texte cru et impactant, Isham est parmis nous pour le Night of Republique festival!"
-          nom="Isham"
-          image="/public/isham.png"
-        />
+        <RouterLink to="/veld">
+          <cardartiste
+            name="Veld"
+            image="/public/Veld.png"
+            date="30"
+            jour="juill."
+        /></RouterLink>
       </div>
 
       <div class="p-3 pt-12">
-        <card
-          jour="Ven"
-          date="29 juill."
-          description="Veld sera la pour tout casser la nuit du vendredi à samedi!"
-          nom="Veld"
-          image="/public/Veld.png"
-        />
+        <RouterLink to="/dams">
+          <cardartiste
+            name="Dams"
+            image="/public/Dems.png"
+            date="31"
+            jour="juill."
+        /></RouterLink>
       </div>
 
       <div class="p-3 pt-12">
-        <card
-          jour="Sam"
-          date="30 juill."
-          description="Sûrement une des têtes les plus attendus ici."
-          nom="Dams"
-          image="/public/Dems.png"
-        />
-      </div>
-
-      <div class="p-3 pt-12">
-        <card
-          jour="Dim"
-          date="31 juill."
-          description="Comment faire un festival sans TravS ? Parmi nous cette année pour nous faire danser."
-          nom="Travs"
-          image="/public/Travs.png"
-        />
+        <RouterLink to="/travs">
+          <cardartiste
+            name="Travs"
+            image="/public/Travs.png"
+            date="24"
+            jour="juill."
+        /></RouterLink>
       </div>
     </div>
+
     <div class="px-28">
       <RouterLink to="/programmation">
         <div
@@ -142,9 +134,10 @@
 
 <script>
 import card from "../components/card.vue";
+import cardartiste from "../components/cardartiste.vue";
 
 export default {
-  components: { card },
+  components: { card, cardartiste },
   name: "ArtistesView",
   data() {
     return {};

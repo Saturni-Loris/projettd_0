@@ -17,8 +17,9 @@ import Card from "./components/card.vue";
           ><img src="../src/assets/logoFestival.svg"
         /></RouterLink>
       </div>
+
       <button
-        class="navbar-toggler bg-jaune"
+        class="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
@@ -26,7 +27,7 @@ import Card from "./components/card.vue";
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <MenuIcon class="text-white h-7 w-7" />
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -318,8 +319,10 @@ import Card from "./components/card.vue";
 </style>
 
 <script>
+import { MenuIcon } from "@heroicons/vue/solid";
+
 export default {
-  components: { Card },
+  components: { Card, MenuIcon },
 };
 </script>
 
