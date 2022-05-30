@@ -1,91 +1,5 @@
  <template>
-  <div class="flex items-center justify-center">
-    <form
-      class="py-10 sm:mr-10 md:mr-10 xl:mr-10 2xl:mx-32"
-      @submit.prevent="onCnx()"
-    >
-      <div class="pb-12 pr-10">
-        <h1 class="px-10 text-3xl font-bold">
-          CONNECTEZ
-          <span class="text-jaune">-</span>VOUS
-        </h1>
-      </div>
-
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <button class="text-white rounded-l-lg bg-bleunuit px-4">
-            Email :
-          </button>
-        </div>
-        <input
-          class="form-control"
-          placeholder="arthurpayacoco@gmail.com"
-          type="text"
-          v-model="user.email"
-          required
-        />
-      </div>
-
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <button class="text-white rounded-l-lg bg-bleunuit px-4">
-            Mot de passe :
-          </button>
-        </div>
-        <input
-          class="form-control"
-          type="password"
-          v-model="user.password"
-          required
-          placeholder="********"
-        />
-      </div>
-      <div class="alert alert-warning mb-3 text-center" v-if="message != null">
-        {{ message }}
-      </div>
-
-      <div class="py-6">
-        <div
-          class="
-            flex flex-shrink-0 flex-grow-0
-            items-center
-            justify-center
-            pb-2
-          "
-        >
-          <div class="">
-            <button
-              class="text-white rounded bg-bleunuit py-2 px-16 font-bold"
-              type="submit"
-            >
-              Connexion
-            </button>
-          </div>
-        </div>
-
-        <div class="flex flex-shrink-0 flex-grow-0 items-center justify-center">
-          <button
-            class="
-              font-base
-              rounded
-              border-2 border-bleunuit
-              py-1
-              px-8
-              text-bleunuit
-            "
-            @click="onDcnx()"
-            type="button"
-          >
-            Deconnexion
-          </button>
-        </div>
-      </div>
-    </form>
-  </div>
-
-  <div class="py-10">
-    <hr class="my-2 border-t-2 bg-jaune" />
-
+  <div class="">
     <div class="pb-12 pr-10">
       <h1 class="p-10 text-3xl font-bold">
         LISTE DE TOUT
@@ -127,7 +41,8 @@
           flex
           items-center
           justify-center
-          sm:mx-20
+          px-10
+          sm:mx-10
           md:mx-28
           xl:mx-64
           2xl:mx-72

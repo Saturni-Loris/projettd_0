@@ -102,15 +102,6 @@ import Card from "./components/card.vue";
 
     <footer class="text-white mt-5 bg-bleunuit p-4 sm:p-6">
       <div class="md:flex md:justify-between">
-        <div class="mb-12 md:mb-0">
-          <a href="/" class="flex items-center">
-            <img
-              src="/src/assets/logofestival.svg"
-              class="h-16"
-              alt="Night of republique Logo"
-            />
-          </a>
-        </div>
         <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
           <div>
             <h2
@@ -257,6 +248,16 @@ import Card from "./components/card.vue";
               </li>
             </ul>
           </div>
+        </div>
+
+        <div class="mb-12 md:mb-0">
+          <a href="/" class="flex items-center">
+            <img
+              src="/src/assets/logofestival.svg"
+              class="h-16"
+              alt="Night of republique Logo"
+            />
+          </a>
         </div>
       </div>
     </footer>
