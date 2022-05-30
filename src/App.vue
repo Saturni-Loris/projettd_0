@@ -102,7 +102,7 @@ import Card from "./components/card.vue";
               <hr class="my-2 border-t-2 bg-jaune" />
 
               <div class="dropdown-item">
-                <RouterLink to="/ficherappeur">Fiche rappeur</RouterLink>
+                <RouterLink to="/participants">Participants</RouterLink>
               </div>
             </div>
           </li>
