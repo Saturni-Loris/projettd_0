@@ -84,15 +84,15 @@ import Card from "./components/card.vue";
               Administration
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="pages/client/liste.html"
-                >Clients</a
-              >
+              <div class="dropdown-item">
+                <RouterLink to="/evenement">Evénement</RouterLink>
+              </div>
 
               <hr class="my-2 border-t-2 bg-jaune" />
 
-              <a class="dropdown-item" href="pages/abonnement/liste.html"
-                >Abonnements</a
-              >
+              <div class="dropdown-item">
+                <RouterLink to="/evenement">Evénement</RouterLink>
+              </div>
             </div>
           </li>
         </ul>

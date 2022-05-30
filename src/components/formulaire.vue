@@ -68,15 +68,7 @@
 
       <div class="mb-6 w-full px-3 md:mb-0 md:w-1/2">
         <label
-          class="
-            text-gray-700
-            mb-2
-            block
-            text-xs
-            font-bold
-            uppercase
-            tracking-wide
-          "
+          class="mb-2 block text-xs font-bold uppercase tracking-wide"
           for="grid-first-name"
         >
           E-mail*
@@ -106,17 +98,7 @@
 
     <div class="-mx-3 mb-6 flex flex-wrap">
       <div class="w-full px-3">
-        <label
-          class="
-            text-gray-700
-            mb-2
-            block
-            text-xs
-            font-bold
-            uppercase
-            tracking-wide
-          "
-        >
+        <label class="mb-2 block text-xs font-bold uppercase tracking-wide">
           Votre message
         </label>
         <textarea

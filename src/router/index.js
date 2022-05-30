@@ -22,6 +22,7 @@ import IshamView from '../views/lesartistes/IshamView.vue'
 import TravsView from '../views/lesartistes/TravsView.vue'
 import VeldView from '../views/lesartistes/VeldView.vue'
 
+import EvenementView from '../views/evenement/EvenementView.vue'
 
 
 
@@ -46,6 +47,8 @@ const router = createRouter({
     { path: '/moncompte', name: 'MoncompteView', component: MoncompteView },
 
     { path: '/concert', name: 'ConcertView', component: ConcertView },
+
+    { path: '/evenement', name: 'EvenementView', component: EvenementView },
 
 
 

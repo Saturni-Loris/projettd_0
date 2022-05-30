@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="pb-12">
+    <div class="pb-12 pr-10">
       <h1 class="p-10 text-3xl font-bold">
         BIENVENUE AU NIGHT
         <span class="text-jaune">OF</span> REPUBLIQUE FESTIVAL
@@ -140,7 +140,7 @@
             gap-2.5
             self-stretch
             rounded-md
-            bg-[#142435]
+            bg-bleunuit
             p-2.5
           "
         >

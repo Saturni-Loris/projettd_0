@@ -59,6 +59,10 @@ i {
     margin: 5px;
 }
 
+.dropdown-menu {
+    background: none;
+}
+
 .synopsis {
     font-size: .9rem;
     font-style: italic;
