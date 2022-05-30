@@ -1,5 +1,5 @@
 <template>
-  <figure class="flex flex-col border-2 border-bleunuit">
+  <figure class="flex flex-col">
     <div
       class="
         flex
@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <figcaption class="relative px-4 py-8">
+    <figcaption class="relative border-2 border-bleunuit px-4 py-8">
       <div class="relative flex flex-col">
         <div class="order-first flex items-center pb-4">
           <h3 class="pr-2 text-lg font-medium leading-8">

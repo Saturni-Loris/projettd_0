@@ -2,7 +2,8 @@
   <div>
     <div class="pb-12">
       <h1 class="p-10 text-3xl font-bold">
-        Bienvenue au Night of Republique festival
+        BIENVENUE AU NIGHT
+        <span class="text-jaune">OF</span> REPUBLIQUE FESTIVAL
       </h1>
     </div>
 
@@ -52,7 +53,7 @@
       </div>
     </div>
 
-    <div class="px-28">
+    <div class="mx-20 pt-7 sm:mx-52 md:mx-72 xl:mx-96 2xl:mx-96">
       <div
         class="
           relative
@@ -80,6 +81,8 @@
     </div>
 
     <div class="pb-4 pt-16">
+      <hr class="my-2 mx-6 border-t-2 bg-jaune" />
+
       <h1 class="text-rougewerplay p-8 text-center text-3xl font-bold">
         Abonnes-toi pour ne rien manquer !
       </h1>
@@ -127,7 +130,7 @@
         </div>
       </div>
 
-      <div class="px-28">
+      <div class="mx-20 pt-7 sm:mx-52 md:mx-72 xl:mx-96 2xl:mx-96">
         <div
           class="
             relative
@@ -218,7 +221,10 @@
     </div>
 
     <div class="flex justify-center pt-12">
-      <img src="../assets/logoavecnom.svg" alt="logo festival" />
+      <img
+        src="../assets/logoavecnom.svg"
+        alt="logo festival avec description du logo"
+      />
     </div>
 
     <div>
@@ -239,13 +245,15 @@
         Alors ? On attend quoi pour nous rejoindre ?
       </h1>
 
-      <lireplus class="mx-32" />
+      <RouterLink to="festival">
+        <lireplus class="mx-20 sm:mx-52 md:mx-72 xl:mx-96 2xl:mx-96" />
+      </RouterLink>
 
       <div class="grid place-items-center">
         <img
           class="p-8 pt-12 drop-shadow-2xl"
           src="../assets/galerie/hanny-naibaho-aWXVxy8BSzc-unsplash 1.png"
-          alt="Image terrain basket"
+          alt="Image festival"
         />
       </div>
     </div>

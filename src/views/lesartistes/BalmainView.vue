@@ -101,6 +101,8 @@
 
     <div>
       <div class="pb-4 pt-16">
+        <hr class="my-2 mx-6 border-t-2 bg-jaune" />
+
         <h1 class="text-rougewerplay p-8 text-center text-3xl font-bold">
           Abonnes-toi pour ne rien manquer !
         </h1>

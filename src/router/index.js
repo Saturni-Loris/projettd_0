@@ -3,6 +3,14 @@ import AccueilView from '../views/AccueilView.vue'
 import ArtistesView from '../views/ArtistesView.vue'
 import ProgrammationView from '../views/ProgrammationView.vue'
 import FestivalView from '../views/FestivalView.vue'
+import MentionsView from '../views/MentionsView.vue'
+import MoncompteView from '../views/MoncompteView.vue'
+
+
+import ConcertView from '../views/ConcertView.vue'
+
+
+
 import ContactView from '../views/ContactView.vue'
 import JaysView from '../views/lesartistes/JaysView.vue'
 import BalmainView from '../views/lesartistes/BalmainView.vue'
@@ -34,6 +42,13 @@ const router = createRouter({
     { path: '/contact', name: 'ContactView', component: ContactView },
     { path: '/festival', name: 'FestivalView', component: FestivalView },
     { path: '/programmation', name: 'ProgrammationView', component: ProgrammationView },
+    { path: '/mentions', name: 'MentionsView', component: MentionsView },
+    { path: '/moncompte', name: 'MoncompteView', component: MoncompteView },
+
+    { path: '/concert', name: 'ConcertView', component: ConcertView },
+
+
+
     { path: '/jays', name: 'JaysView', component: JaysView },
     { path: '/balmain', name: 'BalmainView', component: BalmainView },
     { path: '/dams', name: 'DamsView', component: DamsView },

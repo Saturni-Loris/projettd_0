@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="p-8 text-3xl font-bold">
-      <span class="text-orangewerplay">Contactez</span> nous ici!
+      CONTACTEZ-NOUS <span class="text-jaune">ICI</span>
     </h1>
     <button />
     <div class="items-center justify-center">

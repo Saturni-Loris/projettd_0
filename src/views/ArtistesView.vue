@@ -1,7 +1,9 @@
 <template>
   <div>
     <div>
-      <h1 class="p-8 text-3xl font-bold">Artistes</h1>
+      <h1 class="p-8 text-3xl font-bold">
+        <span class="text-jaune">LES</span> ARTISTES
+      </h1>
     </div>
 
     <div

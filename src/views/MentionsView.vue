@@ -1,31 +1,96 @@
 <template>
-
-      <div class="pb-12">
-        <h1 class="p-8 text-3xl font-bold"><span class="text-orangewerplay">Mentions</span> légales </h1>
-        <h1 class="pr-8 pl-8 text-sm font-medium">werplay.contact@gmail.com
-
-Département MMI Montbéliard
-
-4 Place Tharradin, 25200 Montbéliard
-
-
-Arthur Meyer - 07 60 38 72 51
-
-Loris Saturni - 06 69 49 59 99
-
-Asma Es-Sabbar - 07 60 38 72 51
-        </h1>
-                  <hr class="my-2 border-t-2 text-gray-400" />
-
-        <h1 class="p-8 text-3xl font-bold"><span class="text-orangewerplay">Hébergeur</span> </h1>
-        <h1 class="pr-8 pl-8 text-sm font-medium text-right">
-Infomaniak Network SA
-
-Rue Eugène-Marziano 25, 1227 Genève - Suisse
-
-+41 22 820 35 44</h1>
-
+  <div class="pb-12">
+    <div class="pl-20">
+      <h1 class="text-3xl font-bold">
+        MENTIONS LÉGALES ET
+        <span class="text-jaune">POLITIQUES DE CONFIDENTIALITÉS</span>
+      </h1>
+      <h1 class="text-sm font-medium">
+        Pour toutes questions liées aux: <br />
+        -remarque du site web, <br />
+        -communication de presse, -droit d’auteur,<br /><br />
+        contactez:<br />
+        <span class="font-bold">Loris SATURNI</span>: saturniloris@gmail.com /
+        0669495999
+      </h1>
     </div>
+
+    <hr class="my-16 mx-6 border-t-2 bg-jaune" />
+
+    <div class="pr-20 text-right">
+      <h1 class="text-3xl font-bold">
+        LE FESTIVAL NIGHT OF <span class="text-jaune">OF</span>RÉPUBLIQUE
+      </h1>
+      <h1 class="text-sm font-medium">
+        4 Place Tharradin, <br />
+        25200 Montbéliard<br />
+        Tél +33 (0)3 81 99 47 34<br />
+      </h1>
+    </div>
+
+    <hr class="my-16 mx-6 border-t-2 bg-jaune" />
+
+    <div class="pl-20">
+      <h1 class="text-3xl font-bold">
+        <span class="text-jaune">L</span>'HÉBERGEMENT
+      </h1>
+      <h1 class="text-sm font-medium">Infomaniak</h1>
+    </div>
+
+    <hr class="my-16 mx-6 border-t-2 bg-jaune" />
+
+    <div class="pr-20 text-right">
+      <h1 class="text-3xl font-bold">
+        DESIGN <span class="text-jaune">GRAPHIQUE</span>
+      </h1>
+      <h1 class="text-sm font-medium">
+        4 Place Tharradin, <br />
+        25200 Montbéliard<br />
+        Tél +33 (0)3 81 99 47 34<br />
+      </h1>
+    </div>
+
+    <hr class="my-16 mx-6 border-t-2 bg-jaune" />
+
+    <div class="pl-20">
+      <h1 class="text-3xl font-bold">
+        DROITS<span class="text-jaune">D'AUTEURS </span>
+      </h1>
+      <h1 class="text-sm font-medium">
+        Ce site est propriété du département MMI à Montbéliard.
+      </h1>
+    </div>
+
+    <hr class="my-16 mx-6 border-t-2 bg-jaune" />
+
+    <div class="pr-20 text-right">
+      <h1 class="text-3xl font-bold">
+        CRÉDIT <span class="text-jaune">PHOTO</span>
+      </h1>
+      <h1 class="text-sm font-medium">Unsplash</h1>
+    </div>
+
+    <hr class="my-16 mx-6 border-t-2 bg-jaune" />
+
+    <div class="pl-20">
+      <h1 class="text-3xl font-bold">
+        CRÉDIT <span class="text-jaune">VIDÉO</span>
+      </h1>
+      <h1 class="text-sm font-medium">Unsplash & YouTube</h1>
+    </div>
+
+    <hr class="my-16 mx-6 border-t-2 bg-jaune" />
+
+    <div class="pr-20 text-right">
+      <h1 class="text-3xl font-bold">
+        CRÉDIT <span class="text-jaune">TEXTE</span>
+      </h1>
+      <h1 class="text-sm font-medium">
+        <span class="font-bold">Loris SATURNI</span>: saturniloris@gmail.com /
+        0669495999
+      </h1>
+    </div>
+  </div>
 </template>
 
 <script>
