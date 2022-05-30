@@ -3,7 +3,11 @@ import App from './App.vue'
 import router from './router'
 import './index.css'
 
+import mitt from 'mitt';
+
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js";
+
 
 const firebaseConfig = {
     apiKey: "AIzaSyBv02bojacjY7YxDV1vj4fxIul2WmNhBPY",
@@ -17,6 +21,9 @@ const firebaseConfig = {
 const appFirebase = initializeApp(firebaseConfig);
 
 const app = createApp(App)
+
+export const emitter = mitt();
+app.config.globalProperties.emitter = emitter;
 
 app.use(router)
 

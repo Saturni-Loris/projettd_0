@@ -6,6 +6,10 @@ import FestivalView from '../views/FestivalView.vue'
 import MentionsView from '../views/MentionsView.vue'
 import MoncompteView from '../views/MoncompteView.vue'
 
+import RappeurView from '../views/admin/RappeurView.vue'
+import EvenementView from '../views/admin/EvenementView.vue'
+import FicherappeurView from '../views/admin/FicherappeurView.vue'
+
 
 import ConcertView from '../views/ConcertView.vue'
 
@@ -22,7 +26,6 @@ import IshamView from '../views/lesartistes/IshamView.vue'
 import TravsView from '../views/lesartistes/TravsView.vue'
 import VeldView from '../views/lesartistes/VeldView.vue'
 
-import EvenementView from '../views/evenement/EvenementView.vue'
 
 
 
@@ -49,6 +52,8 @@ const router = createRouter({
     { path: '/concert', name: 'ConcertView', component: ConcertView },
 
     { path: '/evenement', name: 'EvenementView', component: EvenementView },
+    { path: '/rappeur', name: 'RappeurView', component: RappeurView },
+    { path: '/ficherappeur', name: 'FicherappeurView', component: FicherappeurView },
 
 
 

@@ -1,18 +1,92 @@
 <template>
+  <div>
+    <div class="py-6">
+      <div class="p-4">
+        <hr class="my-2 border-t-2 bg-jaune" />
+        <h1 class="text-3xl font-bold">
+          ID, NOM
+          <span class="text-jaune">&</span> ACTIONS DES EVENEMENTS
+        </h1>
+        <h1 class="py-4 text-sm font-medium">
+          Ici, trouver les Id, nom et actions modifiables des evenement
+          participants au festival Night of Republique
+        </h1>
+      </div>
+    </div>
+
+    <table class="table-responsive justify-center py-2 px-2">
+      <thead class="text-white bg-bleunuit">
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Nom</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="evenement in listeEvenementSynchro" :key="evenement.id">
+          <td>{{ evenement.id }}</td>
+          <td>
+            <input type="text" v-model="evenement.nom" />
+          </td>
+          <td>
+            <button
+              class="btn light"
+              @click.prevent="updateEvenement(evenement)"
+            >
+              <i class="fa fa-edit fa-lg"></i>
+            </button>
+            <button
+              class="btn light"
+              @click.prevent="deleteEvenement(evenement)"
+            >
+              <i class="fa fa-trash fa-lg"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
   <div class="">
     <div class="py-6">
       <div class="p-4">
         <hr class="my-2 border-t-2 bg-jaune" />
         <h1 class="text-3xl font-bold">
-          TOUTE
-          <span class="text-jaune">LA</span> PROGRAMMATION
+          LISTE
+          <span class="text-jaune">DES</span> EVENEMENTS
         </h1>
         <h1 class="py-4 text-sm font-medium">
-          Taper le nom de votre artiste préféré ou le jour où vous serez présent
-          au festival dans le filtrage.
+          Ajouter ici un nouvel événement participant au festival Night of
+          Republique
         </h1>
       </div>
     </div>
+
+    <form class="flex items-center justify-center">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span
+            class="
+              input-group-text
+              text-white
+              rounded-l-lg
+              border-2 border-jaune
+              bg-bleunuit
+            "
+            >Nom du nouveau evenement</span
+          >
+        </div>
+        <input type="text" class="form-control" v-model="nom" required />
+        <button
+          class="btn btn-light"
+          type="button"
+          @click="createEvenement()"
+          title="Création"
+        >
+          <i class="fa fa-save fa-lg"></i>
+        </button>
+      </div>
+    </form>
 
     <div class="card-body table-responsive">
       <table class="text-light table">
@@ -44,19 +118,21 @@
           <tr>
             <td>
               <form v-for="evenement in filterByName" :key="evenement.id">
-                <div class="py-2 sm:mx-10 md:mx-28 2xl:mx-10">
+                <div
+                  class="flex justify-center py-2 sm:mx-10 md:mx-28 2xl:mx-10"
+                >
                   <div class="input-group-prepend">
                     <span
                       class="
                         input-group-text
                         text-white
                         borde
-                        rounded-t-lg
+                        rounded-l-lg
                         border-2 border-jaune
                         bg-bleunuit
                         px-4
                       "
-                      >Nom de l'événement</span
+                      >Nom du evenement</span
                     >
                   </div>
                   <input
@@ -65,10 +141,22 @@
                     v-model="evenement.nom"
                     required
                   />
-
-                  <lireplus
-                    class="my-3 ml-52 sm:ml-96 md:ml-96 xl:ml-96 2xl:ml-96"
-                  />
+                  <button
+                    class="btn btn-light"
+                    type="button"
+                    @click="updateEvenement(evenement)"
+                    title="Modification"
+                  >
+                    <i class="fa fa-save fa-lg"></i>
+                  </button>
+                  <button
+                    class="btn btn-light"
+                    type="button"
+                    @click="deleteEvenement(evenement)"
+                    title="Suppression"
+                  >
+                    <i class="fa fa-trash fa-lg"></i>
+                  </button>
                 </div>
               </form>
             </td>
@@ -80,7 +168,6 @@
 </template>
 
 <script>
-import lireplus from "../components/lireplus.vue";
 // Bibliothèque Firestore : import des fonctions
 import {
   getFirestore,
@@ -95,7 +182,6 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
 
 export default {
-  components: { lireplus },
   name: "EvenementView",
   data() {
     return {
@@ -162,6 +248,44 @@ export default {
         }));
         console.log("listeevenement", this.listeEvenement);
       });
+    },
+
+    async createEvenement() {
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document evenement
+      const dbEvenement = collection(firestore, "evenement");
+      // On passe en paramètre format json
+      // Les champs à mettre à jour
+      // Sauf le id qui est créé automatiquement
+      const docRef = await addDoc(dbEvenement, {
+        nom: this.nom,
+      });
+      console.log("document créé avec le id : ", docRef.id);
+    },
+
+    async updateEvenement(evenement) {
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document evenement
+      // Reference du evenement à modifier
+      const docRef = doc(firestore, "evenement", evenement.id);
+      // On passe en paramètre format json
+      // Les champs à mettre à jour
+      await updateDoc(docRef, {
+        nom: evenement.nom,
+      });
+    },
+
+    async deleteEvenement(evenement) {
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      evenement;
+      // Base de données (collection)  document evenement
+      // Reference de la evenement à supprimer
+      const docRef = doc(firestore, "evenement", evenement.id);
+      // Suppression evenement référencé
+      await deleteDoc(docRef);
     },
   },
 };

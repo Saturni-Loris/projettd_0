@@ -19,7 +19,7 @@
         </div>
         <input
           class="form-control"
-          placeholder="arthurpayacoco@gmail.com"
+          placeholder="ex: arthurpayacoco@gmail.com"
           type="text"
           v-model="user.email"
           required
@@ -82,128 +82,6 @@
       </div>
     </form>
   </div>
-
-  <div class="container">
-    <div class="card bg-dark">
-      <div class="row">
-        <div class="col-6">
-          <div class="card-header">
-            <h5 style="color: white">Connexion</h5>
-          </div>
-          <form>
-            <div class="card-body">
-              <div class="row">
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">Email</span>
-                  </div>
-                  <input
-                    class="form-control"
-                    placeholder="Adesse mail"
-                    type="email"
-                    required
-                  />
-                </div>
-
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">Mot de passe</span>
-                  </div>
-                  <input
-                    class="form-control"
-                    placeholder="Mot de passe"
-                    :type="type"
-                    required
-                  />
-                  <div class="input-group-after">
-                    <button class="btn btn-light">
-                      <i class="fa fa-eye fa-lg"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-footer">
-              <button type="submit" class="btn btn-dark float-left">
-                Connexion
-              </button>
-              <button type="button" class="btn btn-dark float-right">
-                Deconnexion
-              </button>
-            </div>
-          </form>
-        </div>
-
-        <div class="col-6">
-          <div class="card-header">
-            <h5 style="color: white">S'inscrire</h5>
-          </div>
-
-          <form>
-            <div class="card-body">
-              <div class="row">
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">Login</span>
-                  </div>
-                  <input class="form-control" placeholder="Login" required />
-                </div>
-
-                <div class="w-100 mb-3 text-center" v-if="imageData">
-                  <img class="preview img-fluid" :src="imageData" />
-                </div>
-
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">Photo</span>
-                  </div>
-                  <div class="custom-file">
-                    <input
-                      type="file"
-                      class="custom-file-input"
-                      ref="file"
-                      id="file"
-                      @change="previewImage"
-                    />
-                    <label class="custom-file-label" for="file"
-                      >Sélectionner l'image</label
-                    >
-                  </div>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">Email</span>
-                  </div>
-                  <input
-                    class="form-control"
-                    placeholder="Adresse mail"
-                    type="email"
-                    required
-                  />
-                </div>
-
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">Mot de passe</span>
-                  </div>
-                  <input
-                    class="form-control"
-                    placeholder="Mot de passe"
-                    required
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="card-footer text-center">
-              <button type="submit" class="btn btn-dark">Créer Compte</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script>
@@ -211,8 +89,9 @@ import {
   getAuth,
   signInWithEmailAndPassword,
   signOut,
-  onAuthStateChanged,
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js";
+
+import { emitter } from "../main.js";
 
 import {
   getFirestore,
@@ -262,6 +141,7 @@ export default {
         .then((response) => {
           console.log("Vous êtes connecté", response.user);
           this.user = response.user;
+          emitter.emit("connectUser", { user: this.user });
           this.message = "Vous êtes connecté : " + this.user.email;
         })
         .catch((error) => {
@@ -270,19 +150,18 @@ export default {
         });
     },
 
-    onDnx() {
+    onDcnx() {
       signOut(getAuth())
         .then((response) => {
-          this.user = getAuth().currentUser;
+          this.message = "Vous êtes déconnecté";
           this.user = {
             email: null,
             password: null,
           };
-          console.log("Vous êtes deconnecté", this.user);
-          this.message = "Vous n'êtes pasconnecté";
+          emitter.emit("deConnectUser", { user: this.user });
         })
         .catch((error) => {
-          console.log("erreur deconnexion", error);
+          console.log("Erreur deconnexion ", error);
         });
     },
 
