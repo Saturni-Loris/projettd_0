@@ -231,7 +231,7 @@ export default {
       const dbRappeur = collection(firestore, "rappeur");
       // Liste des rappeur synchronisée
       const query = await onSnapshot(dbRappeur, (snapshot) => {
-        console.log("query", query);
+        //console.log("query", query);
         //  Récupération des résultats dans listeRappeurSynchro
         // On utilse map pour récupérer l'intégralité des données renvoyées
         // on identifie clairement le id du document
@@ -240,7 +240,7 @@ export default {
           id: doc.id,
           ...doc.data(),
         }));
-        console.log("listerappeur", this.listeRappeur);
+        //console.log("listerappeur", this.listeRappeur);
       });
     },
 
@@ -255,7 +255,7 @@ export default {
       const docRef = await addDoc(dbRappeur, {
         nom: this.nom,
       });
-      console.log("document créé avec le id : ", docRef.id);
+      //console.log("document créé avec le id : ", docRef.id);
     },
 
     async updateRappeur(rappeur) {

@@ -85,20 +85,23 @@ import Card from "./components/card.vue";
             >
               Administration
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div
+              class="dropdown-menu bg-bleunuit"
+              aria-labelledby="navbarDropdown"
+            >
               <div class="dropdown-item">
                 <RouterLink to="/evenement">Evénement</RouterLink>
               </div>
 
               <hr class="my-2 border-t-2 bg-jaune" />
 
-              <div class="dropdown-item">
+              <div class="dropdown-item bg-bleunuit">
                 <RouterLink to="/rappeur">Rappeur</RouterLink>
               </div>
 
               <hr class="my-2 border-t-2 bg-jaune" />
 
-              <div class="dropdown-item">
+              <div class="dropdown-item bg-bleunuit">
                 <RouterLink to="/participants"
                   >Nouveau rappeur participants</RouterLink
                 >
@@ -321,13 +324,13 @@ export default {
 
     emitter.on("connectUser", (e) => {
       this.user = e.user;
-      console.log("App => Rececption user connecté", this.user);
+      //console.log("App => Rececption user connecté", this.user);
       this.getUserInfo(this.user);
     });
 
     emitter.on("deConnectUser", (e) => {
       this.user = e.user;
-      console.log("App => Reception user déconnecté", this.user);
+      //console.log("App => Reception user déconnecté", this.user);
       this.userInfo = null;
       this.name = "Festival";
       this.avatar = null;
@@ -366,7 +369,7 @@ export default {
           id: doc.id,
           ...doc.data(),
         }));
-        console.log("userInfo", this.userInfo);
+        //console.log("userInfo", this.userInfo);
         // userInfo étant un tableau, onn récupère
         // ses informations dans la 1° cellule du tableau : 0
         this.name = this.userInfo[0].login;
@@ -380,7 +383,7 @@ export default {
             this.avatar = url;
           })
           .catch((error) => {
-            console.log("erreur downloadUrl", error);
+            //console.log("erreur downloadUrl", error);
           });
       });
     },

@@ -143,13 +143,13 @@ export default {
     onCnx() {
       signInWithEmailAndPassword(getAuth(), this.user.email, this.user.password)
         .then((response) => {
-          console.log("Vous êtes connecté", response.user);
+          //e.log("Vous êtes connecté", response.user);
           this.user = response.user;
           emitter.emit("connectUser", { user: this.user });
           this.message = "Vous êtes connecté : " + this.user.email;
         })
         .catch((error) => {
-          console.log("Erreur connexion", error);
+          //console.log("Erreur connexion", error);
           this.message = "Erreur d'authentification";
         });
     },
@@ -165,7 +165,7 @@ export default {
           emitter.emit("deConnectUser", { user: this.user });
         })
         .catch((error) => {
-          console.log("Erreur deconnexion ", error);
+          //console.log("Erreur deconnexion ", error);
         });
     },
 

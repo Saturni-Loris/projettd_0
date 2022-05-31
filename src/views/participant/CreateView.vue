@@ -154,7 +154,7 @@ export default {
           id: doc.id,
           ...doc.data(),
         }));
-        console.log("Liste des pays", this.listePays);
+        //console.log("Liste des pays", this.listePays);
       });
     },
 
@@ -191,7 +191,7 @@ export default {
       // Upload de l'image sur le Cloud Storage
       await uploadString(refStorage, this.imageData, "data_url").then(
         (snapshot) => {
-          console.log("Uploaded a base64 string");
+          //console.log("Uploaded a base64 string");
 
           // Création du participant sur le Firestore
           const db = getFirestore();

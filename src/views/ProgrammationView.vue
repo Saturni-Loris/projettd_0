@@ -155,7 +155,7 @@ export default {
       const dbEvenement = collection(firestore, "evenement");
       // Liste des Evenement synchronisée
       const query = await onSnapshot(dbEvenement, (snapshot) => {
-        console.log("query", query);
+        //console.log("query", query);
         //  Récupération des résultats dans listeEvenementSynchro
         // On utilse map pour récupérer l'intégralité des données renvoyées
         // on identifie clairement le id du document
@@ -164,7 +164,7 @@ export default {
           id: doc.id,
           ...doc.data(),
         }));
-        console.log("listeevenement", this.listeEvenement);
+        //console.log("listeevenement", this.listeEvenement);
       });
     },
   },
