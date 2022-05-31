@@ -18,7 +18,7 @@
       <div class="grid place-items-center">
         <img
           class="p-8 drop-shadow-2xl"
-          src="../assets/galerie/hanny-naibaho-aWXVxy8BSzc-unsplash 1.png"
+          src="../assets/galerie/img4.png"
           alt="Image terrain basket"
         />
       </div>
@@ -40,7 +40,7 @@
       <div class="grid place-items-center">
         <img
           class="p-8 drop-shadow-2xl"
-          src="../assets/galerie/yvette-de-wit-NYrVisodQ2M-unsplash 1.png"
+          src="../assets/galerie/img1.png"
           alt="Image panier basket"
         />
       </div>
@@ -57,7 +57,7 @@
       <div class="grid place-items-center">
         <img
           class="p-8 drop-shadow-2xl"
-          src="../assets/galerie/aranxa-esteve-pOXHU0UEDcg-unsplash 1.png"
+          src="../assets/galerie/img2.png"
           alt="Image terrain football"
         />
       </div>
@@ -82,7 +82,7 @@
                     rounded-lg
                     object-cover object-center
                   "
-                  src="../assets/galerie/aranxa-esteve-pOXHU0UEDcg-unsplash 1.png"
+                  src="../assets/galerie/img3.png"
                 />
               </div>
               <div class="w-1/2 p-1 md:p-2">
@@ -95,7 +95,7 @@
                     rounded-lg
                     object-cover object-center
                   "
-                  src="../assets/galerie/austin-neill-hgO1wFPXl3I-unsplash 1.png"
+                  src="../assets/galerie/img4.png"
                 />
               </div>
               <div class="w-full p-1 md:p-2">
@@ -108,7 +108,7 @@
                     rounded-lg
                     object-cover object-center
                   "
-                  src="../assets/galerie/hanny-naibaho-aWXVxy8BSzc-unsplash 1.png"
+                  src="../assets/galerie/img5.png"
                 />
               </div>
             </div>
@@ -123,7 +123,7 @@
                     rounded-lg
                     object-cover object-center
                   "
-                  src="../assets/galerie/pablo-heimplatz-ZODcBkEohk8-unsplash 1.png"
+                  src="../assets/galerie/img6.png"
                 />
               </div>
               <div class="w-1/2 p-1 md:p-2">
@@ -136,7 +136,7 @@
                     rounded-lg
                     object-cover object-center
                   "
-                  src="../assets/galerie/tony-pham-FUmDe-Bx1LA-unsplash 2.png"
+                  src="../assets/galerie/img2.png"
                 />
               </div>
               <div class="w-1/2 p-1 md:p-2">
@@ -149,7 +149,7 @@
                     rounded-lg
                     object-cover object-center
                   "
-                  src="../assets/galerie/yvette-de-wit-NYrVisodQ2M-unsplash 1.png"
+                  src="../assets/galerie/img3.png"
                 />
               </div>
             </div>

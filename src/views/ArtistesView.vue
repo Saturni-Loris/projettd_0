@@ -14,11 +14,7 @@
     >
       <div class="p-3 pt-12">
         <RouterLink to="/jays">
-          <cardartiste
-            name="6Jays"
-            image="/public/6Jays.png"
-            date="24"
-            jour="juill."
+          <cardartiste name="6Jays" image="/6Jays.png" date="24" jour="juill."
         /></RouterLink>
       </div>
 
@@ -26,7 +22,7 @@
         <RouterLink to="/balmain">
           <cardartiste
             name="Balmain"
-            image="/public/Balmain.png"
+            image="/Balmain.png"
             date="25"
             jour="juill."
         /></RouterLink>
@@ -36,7 +32,7 @@
         <RouterLink to="/fujipe">
           <cardartiste
             name="FujiPe"
-            image="/public/FujiPe.png"
+            image="/FujiPe.png"
             date="26"
             jour="juill."
         /></RouterLink>
@@ -46,7 +42,7 @@
         <RouterLink to="/gaaris">
           <cardartiste
             name="Gaaris"
-            image="/public/Gaaris.png"
+            image="/Gaaris.png"
             date="27"
             jour="juill."
         /></RouterLink>
@@ -56,7 +52,7 @@
         <RouterLink to="/greenzer">
           <cardartiste
             name="GreenZer"
-            image="/public/GreenZer.png"
+            image="/GreenZer.png"
             date="28"
             jour="juill."
         /></RouterLink>
@@ -64,41 +60,25 @@
 
       <div class="p-3 pt-12">
         <RouterLink to="/isham">
-          <cardartiste
-            name="Isham"
-            image="/public/Isham.png"
-            date="29"
-            jour="juill."
+          <cardartiste name="Isham" image="/Isham.png" date="29" jour="juill."
         /></RouterLink>
       </div>
 
       <div class="p-3 pt-12">
         <RouterLink to="/veld">
-          <cardartiste
-            name="Veld"
-            image="/public/Veld.png"
-            date="30"
-            jour="juill."
+          <cardartiste name="Veld" image="/Veld.png" date="30" jour="juill."
         /></RouterLink>
       </div>
 
       <div class="p-3 pt-12">
         <RouterLink to="/dams">
-          <cardartiste
-            name="Dams"
-            image="/public/Dems.png"
-            date="31"
-            jour="juill."
+          <cardartiste name="Dams" image="/Dems.png" date="31" jour="juill."
         /></RouterLink>
       </div>
 
       <div class="p-3 pt-12">
         <RouterLink to="/travs">
-          <cardartiste
-            name="Travs"
-            image="/public/Travs.png"
-            date="24"
-            jour="juill."
+          <cardartiste name="Travs" image="/Travs.png" date="24" jour="juill."
         /></RouterLink>
       </div>
     </div>

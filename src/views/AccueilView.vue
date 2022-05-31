@@ -18,7 +18,7 @@
           date="24 juill."
           description="Avec ces textes profond, provocateur et impliqué, 6Jays sera présent."
           nom="6Jays"
-          image="/public/6Jays.png"
+          image="/6Jays.png"
         />
       </div>
 
@@ -28,7 +28,7 @@
           date="25 juill."
           description="Implanté dans la musique depuis à peine 1 an. Balmain est la pour vous."
           nom="Balmain"
-          image="/public/Balmain.png"
+          image="/Balmain.png"
         />
       </div>
 
@@ -38,7 +38,7 @@
           date="26 juill."
           description="Comment faire un festival sans Cam ? Il sera la, et vous?"
           nom="Cam"
-          image="/public/Cam.png"
+          image="/Cam.png"
         />
       </div>
 
@@ -48,7 +48,7 @@
           date="27 juill."
           description="Son dernier album  mondialement connu, c'est impossible sans FujiPe."
           nom="FujiPe"
-          image="/public/FujiPe.png"
+          image="/FujiPe.png"
         />
       </div>
     </div>
@@ -252,7 +252,7 @@
       <div class="grid place-items-center">
         <img
           class="p-8 pt-12 drop-shadow-2xl"
-          src="../assets/galerie/hanny-naibaho-aWXVxy8BSzc-unsplash 1.png"
+          src="../assets/galerie/img1.png"
           alt="Image festival"
         />
       </div>
