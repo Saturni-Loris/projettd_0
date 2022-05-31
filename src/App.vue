@@ -15,10 +15,6 @@ import Card from "./components/card.vue";
       "
     >
       <div class="navbar-brand pl-2">
-        <RouterLink to="/"
-          ><img src="../src/assets/logoFestival.svg"
-        /></RouterLink>
-
         <span v-if="avatar != null" class="mr-3">
           <img class="avatar" :src="avatar" />
         </span>
@@ -85,6 +81,7 @@ import Card from "./components/card.vue";
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
+              v-if="isAdmin"
             >
               Administration
             </a>
@@ -102,7 +99,9 @@ import Card from "./components/card.vue";
               <hr class="my-2 border-t-2 bg-jaune" />
 
               <div class="dropdown-item">
-                <RouterLink to="/participants">Participants</RouterLink>
+                <RouterLink to="/participants"
+                  >Nouveau rappeur participants</RouterLink
+                >
               </div>
             </div>
           </li>

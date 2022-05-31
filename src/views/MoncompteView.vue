@@ -40,7 +40,11 @@
           placeholder="********"
         />
       </div>
-      <div class="alert alert-warning mb-3 text-center" v-if="message != null">
+      <div
+        class="alert alert-warning mb-3 text-center"
+        rold="alert"
+        v-if="message != null"
+      >
         {{ message }}
       </div>
 
@@ -176,6 +180,15 @@ export default {
         };
         this.listeEvenement.push(evenement);
       });
+    },
+
+    affiche() {
+      this.view = !this.view;
+      if (this.view) {
+        this.type = "text";
+      } else {
+        this.type = "password";
+      }
     },
 
     async getEvenementSynchro() {

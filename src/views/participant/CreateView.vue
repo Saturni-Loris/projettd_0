@@ -1,12 +1,12 @@
 <template>
   <div class="container">
     <form enctype="multipart/form-data" @submit.prevent="createParticipant">
-      <div class="card bg-dark">
-        <div class="card-header">
-          <h5 style="color: white">Création participant</h5>
+      <div class="card">
+        <div class="card-header text-white bg-bleunuit">
+          <h5 class="">Création participant</h5>
         </div>
 
-        <div class="card-body">
+        <div class="card-body border-2 border-bleunuit">
           <div class="row">
             <div class="col-6">
               <div>
@@ -26,18 +26,7 @@
                   required
                 />
               </div>
-              <br />
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">Prénom</span>
-                </div>
-                <input
-                  v-model="participant.prenom"
-                  class="form-control"
-                  placeholder="Prénom de la personne"
-                  key="required"
-                />
-              </div>
+
               <br />
               <div class="input-group">
                 <div class="input-group-prepend">
@@ -86,10 +75,15 @@
           </div>
         </div>
 
-        <div class="card-footer">
-          <button type="submit" class="btn btn-dark float-left">Créer</button>
-          <button class="btn btn-dark float-right">
-            <router-link to="/participants">Cancel</router-link>
+        <div class="card-footer bg-white border-x-2 border-b-2 border-bleunuit">
+          <button
+            type="submit"
+            class="btn float-left border-2 border-bleunuit text-bleunuit"
+          >
+            Créer
+          </button>
+          <button class="btn bor text-white float-right border-2 bg-bleunuit">
+            <router-link to="/participants">Annuler</router-link>
           </button>
         </div>
       </div>

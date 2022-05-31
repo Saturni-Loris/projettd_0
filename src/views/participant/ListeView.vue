@@ -1,8 +1,8 @@
 <template>
   <div class="card bg-dark">
-    <div class="card-header">
-      <h5>
-        Liste des participants
+    <div class="card-header text-white bg-bleunuit">
+      <h5 class="">
+        Ajouter un rappeur participant au festival
         <span class="float-right" title="Créer un nouveau participant">
           <router-link to="/createParticipant">
             <i class="fa fa-plus fa-lg text-light"></i>
@@ -11,16 +11,14 @@
       </h5>
     </div>
 
-    <div class="card-body table-responsive">
-      <table class="text-light table">
+    <div class="card-body table-responsive bg-white border-2 border-bleunuit">
+      <table class="table text-bleunuit">
         <thead>
           <tr>
             <th scope="col" class="text-center">Image</th>
             <th scope="col">Nom</th>
-            <th scope="col">Prénom</th>
             <th scope="col">Pays</th>
             <th scope="col">Né le</th>
-            <th scope="col">Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -35,7 +33,6 @@
             <td>
               <b>{{ part.nom }}</b>
             </td>
-            <td>{{ part.prenom }}</td>
             <td>{{ part.nationalite }}</td>
             <td>{{ dateFr(part.naissance) }}</td>
             <td>
