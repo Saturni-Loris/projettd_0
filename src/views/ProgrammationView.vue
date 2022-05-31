@@ -65,10 +65,14 @@
                     v-model="evenement.nom"
                     required
                   />
-
-                  <lireplus
-                    class="my-3 ml-52 sm:ml-96 md:ml-96 xl:ml-96 2xl:ml-96"
-                  />
+                  <RouterLink
+                    to="concert"
+                    class="hover:text-jaune hover:no-underline"
+                  >
+                    <lireplus
+                      class="my-3 ml-52 sm:ml-96 md:ml-96 xl:ml-96 2xl:ml-96"
+                    />
+                  </RouterLink>
                 </div>
               </form>
             </td>

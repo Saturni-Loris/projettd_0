@@ -18,7 +18,7 @@
           date="24 juill."
           description="Avec ces textes profond, provocateur et impliqué, 6Jays sera présent."
           nom="6Jays"
-          image="/6Jays.png"
+          image="/artistes/6Jays.png"
         />
       </div>
 
@@ -28,7 +28,7 @@
           date="25 juill."
           description="Implanté dans la musique depuis à peine 1 an. Balmain est la pour vous."
           nom="Balmain"
-          image="/Balmain.png"
+          image="/artistes/Balmain.png"
         />
       </div>
 
@@ -38,7 +38,7 @@
           date="26 juill."
           description="Comment faire un festival sans Cam ? Il sera la, et vous?"
           nom="Cam"
-          image="/Cam.png"
+          image="/artistes/Cam.png"
         />
       </div>
 
@@ -48,37 +48,38 @@
           date="27 juill."
           description="Son dernier album  mondialement connu, c'est impossible sans FujiPe."
           nom="FujiPe"
-          image="/FujiPe.png"
+          image="/artistes/FujiPe.png"
         />
       </div>
     </div>
-
-    <div class="mx-20 pt-7 sm:mx-52 md:mx-72 xl:mx-96 2xl:mx-96">
-      <div
-        class="
-          relative
-          flex flex-shrink-0 flex-grow-0
-          items-center
-          justify-center
-          gap-2.5
-          self-stretch
-          rounded-md
-          border-2
-          p-2.5
-        "
-      >
-        <p
+    <RouterLink to="artistes" class="hover:text-jaune hover:no-underline">
+      <div class="mx-20 pt-7 sm:mx-52 md:mx-72 xl:mx-96 2xl:mx-96">
+        <div
           class="
-            flex-shrink-0 flex-grow-0
-            text-left text-base
-            font-semibold
-            text-bleunuit
+            relative
+            flex flex-shrink-0 flex-grow-0
+            items-center
+            justify-center
+            gap-2.5
+            self-stretch
+            rounded-md
+            border-2
+            p-2.5
           "
         >
-          <RouterLink to="artistes">TOUT LES ARTISTES </RouterLink>
-        </p>
-      </div>
-    </div>
+          <p
+            class="
+              flex-shrink-0 flex-grow-0
+              text-left text-base
+              font-semibold
+              text-bleunuit
+            "
+          >
+            TOUT LES ARTISTES
+          </p>
+        </div>
+      </div></RouterLink
+    >
 
     <div class="pb-4 pt-16">
       <hr class="my-2 mx-6 border-t-2 bg-jaune" />
@@ -245,7 +246,7 @@
         Alors ? On attend quoi pour nous rejoindre ?
       </h1>
 
-      <RouterLink to="festival">
+      <RouterLink to="festival" class="hover:no-underline">
         <lireplus class="mx-20 sm:mx-52 md:mx-72 xl:mx-96 2xl:mx-96" />
       </RouterLink>
 
