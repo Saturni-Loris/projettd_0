@@ -108,10 +108,15 @@ import Card from "./components/card.vue";
               <hr class="my-2 border-t-2 bg-jaune" />
 
               <div class="dropdown-item">
-                <RouterLink to="/categoriemusique">Catégorie musique</RouterLink>
+                <RouterLink to="/categoriemusique"
+                  >Catégorie musique</RouterLink
+                >
               </div>
 
               <hr class="my-2 border-t-2 bg-jaune" />
+              <div class="dropdown-item">
+                <RouterLink to="/participants">Participants</RouterLink>
+              </div>
             </div>
           </li>
         </ul>

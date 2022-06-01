@@ -12,9 +12,12 @@ import ListeView from '../views/admin/ListeView.vue'
 import CategoriemusiqueView from '../views/admin/CategoriemusiqueView.vue'
 
 
-
 import ConcertView from '../views/ConcertView.vue'
 
+import ListeParticipant from '../views/participant/ListeView.vue'
+import CreateParticipant from '../views/participant/CreateView.vue'
+import UpdateParticipant from '../views/participant/UpdateView.vue'
+import DeleteParticipant from '../views/participant/DeleteView.vue'
 
 
 import ContactView from '../views/ContactView.vue'
@@ -53,11 +56,17 @@ const router = createRouter({
 
     { path: '/concert', name: 'ConcertView', component: ConcertView },
 
+
+    { path: '/participants', name: 'ListeParticipant', component: ListeParticipant },
+    { path: '/createParticipant', name: 'CreateParticipant', component: CreateParticipant },
+    { path: '/updateParticipant/:id', name: 'UpdateParticipant', component: UpdateParticipant },
+    { path: '/deleteParticipant/:id', name: 'DeleteParticipant', component: DeleteParticipant },
+
+
     { path: '/evenement', name: 'EvenementView', component: EvenementView },
     { path: '/rappeur', name: 'RappeurView', component: RappeurView },
     { path: '/categoriemusique', name: 'CategoriemusiqueView', component: CategoriemusiqueView },
     { path: '/pays', name: 'ListeView', component: ListeView },
-
 
 
 
