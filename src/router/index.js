@@ -9,6 +9,7 @@ import MoncompteView from '../views/MoncompteView.vue'
 import RappeurView from '../views/admin/RappeurView.vue'
 import EvenementView from '../views/admin/EvenementView.vue'
 import ListeView from '../views/admin/ListeView.vue'
+import CategoriemusiqueView from '../views/admin/CategoriemusiqueView.vue'
 
 
 
@@ -54,7 +55,7 @@ const router = createRouter({
 
     { path: '/evenement', name: 'EvenementView', component: EvenementView },
     { path: '/rappeur', name: 'RappeurView', component: RappeurView },
-
+    { path: '/categoriemusique', name: 'CategoriemusiqueView', component: CategoriemusiqueView },
     { path: '/pays', name: 'ListeView', component: ListeView },
 
 

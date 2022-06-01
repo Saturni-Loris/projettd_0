@@ -1,3 +1,7 @@
+login: saturniloris@gmail.com
+mdp: Asxefvthn12.@
+UID: 0kl2zx7HRcfpjIc8ACBSI82hvZA3
+
 # video
 
 This template should help get you started developing with Vue 3 in Vite.
