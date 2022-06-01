@@ -149,7 +149,7 @@ export default {
           this.message = "Vous êtes connecté : " + this.user.email;
         })
         .catch((error) => {
-          //console.log("Erreur connexion", error);
+          console.log("Erreur connexion", error);
           this.message = "Erreur d'authentification";
         });
     },
@@ -165,7 +165,7 @@ export default {
           emitter.emit("deConnectUser", { user: this.user });
         })
         .catch((error) => {
-          //console.log("Erreur deconnexion ", error);
+          console.log("Erreur deconnexion ", error);
         });
     },
 

@@ -7,10 +7,10 @@
           TOUTE
           <span class="text-jaune">LA</span> PROGRAMMATION
         </h1>
-        <h1 class="py-4 text-sm font-medium">
+        <h2 class="py-4 text-sm font-medium">
           Taper le nom de votre artiste préféré ou le jour où vous serez présent
           au festival dans le filtrage.
-        </h1>
+        </h2>
       </div>
     </div>
 

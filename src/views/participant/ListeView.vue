@@ -1,8 +1,8 @@
 <template>
   <div class="card bg-dark">
-    <div class="card-header">
+    <div class="card-header text-white bg-bleunuit">
       <h5>
-        Liste des participants
+        Liste des participants du festival
         <span class="float-right" title="Créer un nouveau participant">
           <router-link to="/createParticipant">
             <i class="fa fa-plus fa-lg text-light"></i>
@@ -11,15 +11,14 @@
       </h5>
     </div>
 
-    <div class="card-body table-responsive">
-      <table class="text-light table">
+    <div class="card-body table-responsive bg-white">
+      <table class="table text-bleunuit">
         <thead>
           <tr>
             <th scope="col" class="text-center">Image</th>
             <th scope="col">Nom</th>
-            <th scope="col">Prénom</th>
-            <th scope="col">Pays</th>
-            <th scope="col">Né le</th>
+            <th scope="col">Pays/Ville</th>
+            <th scope="col">Né(e) le</th>
             <th scope="col">Actions</th>
           </tr>
         </thead>
@@ -35,18 +34,24 @@
             <td>
               <b>{{ part.nom }}</b>
             </td>
-            <td>{{ part.prenom }}</td>
+
             <td>{{ part.nationalite }}</td>
             <td>{{ dateFr(part.naissance) }}</td>
-            <td>
-              <span title="Supprimer le participant" class="mr-2">
+            <td class="">
+              <span
+                title="Supprimer le participant"
+                class="mr-2 rounded-lg bg-bleunuit p-1"
+              >
                 <RouterLink
                   :to="{ name: 'DeleteParticipant', params: { id: part.id } }"
                 >
                   <i class="fa fa-times fa-lg text-light"></i>
                 </RouterLink>
               </span>
-              <span title="Modifier le participant" class="mr-2">
+              <span
+                title="Modifier le participant"
+                class="mr-2 rounded-lg bg-bleunuit p-1"
+              >
                 <!-- Pour passer un paramètre dans la navigation :
                                 On utilise le nom de la route
                                 l'attribut params, permet de préciser le nom du paramètre (id) 
@@ -134,7 +139,7 @@ export default {
               personne.photo = url;
             })
             .catch((error) => {
-              console.log("erreur downloadUrl", error);
+              //console.log("erreur downloadUrl", error);
             });
         });
       });

@@ -1,9 +1,12 @@
 <template>
   <div class="container">
-    <form enctype="multipart/form-data" @submit.prevent="updateParticipant">
-      <div class="card bg-dark">
-        <div class="card-header">
-          <h5 style="color: white">Mise à jour participant</h5>
+    <form
+      enctype="multipart/form-data text-white bg-bleunuit"
+      @submit.prevent="updateParticipant"
+    >
+      <div class="card">
+        <div class="card-header text-white bg-bleunuit">
+          <h5 class="">Mise à jour participant au festival</h5>
         </div>
 
         <div class="card-body">
@@ -17,7 +20,9 @@
             <div class="col-6">
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text">Nom</span>
+                  <span class="input-group-text text-white bg-bleunuit"
+                    >Nom</span
+                  >
                 </div>
                 <input
                   class="form-control"
@@ -29,7 +34,9 @@
               <br />
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text">Prénom</span>
+                  <span class="input-group-text text-white bg-bleunuit"
+                    >Prénom</span
+                  >
                 </div>
                 <input
                   class="form-control"
@@ -41,7 +48,9 @@
               <br />
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text">Photo</span>
+                  <span class="input-group-text text-white bg-bleunuit"
+                    >Photo</span
+                  >
                 </div>
                 <div class="custom-file">
                   <input
@@ -59,7 +68,9 @@
               <br />
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text">Date naissance</span>
+                  <span class="input-group-text text-white bg-bleunuit"
+                    >Date naissance</span
+                  >
                 </div>
                 <input
                   type="date"
@@ -72,7 +83,9 @@
               <br />
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text">Pays</span>
+                  <span class="input-group-text text-white bg-bleunuit"
+                    >Pays</span
+                  >
                 </div>
                 <select class="custom-select" v-model="participant.nationalite">
                   <option selected disabled>Sélectionner un Pays</option>
@@ -88,10 +101,13 @@
         </div>
 
         <div class="card-footer">
-          <button type="submit" class="btn btn-dark float-left">
+          <button
+            type="submit"
+            class="btn float-left border-bleunuit text-bleunuit"
+          >
             Modifier
           </button>
-          <button class="btn btn-dark float-right">
+          <button class="btn text-white float-right bg-bleunuit">
             <RouterLink to="/participants">Cancel</RouterLink>
           </button>
         </div>
@@ -153,7 +169,7 @@ export default {
     // Récupération du id passé en paramètre
     // On utilise le id passé par la route
     // via la variable système $route de la vue
-    console.log("id participant", this.$route.params.id);
+    //console.log("id participant", this.$route.params.id);
     // Recherche participant concerné
     this.getParticipant(this.$route.params.id);
     // Appel de la liste des pays
@@ -250,7 +266,7 @@ export default {
         docRef = ref(storage, "participant/" + this.participant.photo);
         await uploadString(docRef, this.imageData, "data_url").then(
           (snapshot) => {
-            console.log("Uploaded a base64 string", this.participant.photo);
+            //console.log("Uploaded a base64 string", this.participant.photo);
           }
         );
       }

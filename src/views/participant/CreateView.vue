@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <form enctype="multipart/form-data" @submit.prevent="createParticipant">
-      <div class="card bg-dark">
-        <div class="card-header">
-          <h5 style="color: white">Création participant</h5>
+      <div class="card">
+        <div class="card-header bg-bleunuit">
+          <h5 class="">Création participant au festival</h5>
         </div>
 
         <div class="card-body">
@@ -17,7 +17,9 @@
             <div class="col-6">
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text">Nom</span>
+                  <span class="input-group-text text-white bg-bleunuit"
+                    >Nom</span
+                  >
                 </div>
                 <input
                   class="form-control"
@@ -26,22 +28,13 @@
                   required
                 />
               </div>
+
               <br />
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text">Prénom</span>
-                </div>
-                <input
-                  v-model="participant.prenom"
-                  class="form-control"
-                  placeholder="Prénom de la personne"
-                  key="required"
-                />
-              </div>
-              <br />
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">Photo</span>
+                  <span class="input-group-text text-white bg-bleunuit"
+                    >Photo</span
+                  >
                 </div>
                 <div class="custom-file">
                   <input
@@ -59,7 +52,9 @@
               <br />
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text">Date naissance</span>
+                  <span class="input-group-text text-white bg-bleunuit"
+                    >Date naissance</span
+                  >
                 </div>
                 <input
                   type="date"
@@ -72,7 +67,9 @@
               <br />
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text">Pays</span>
+                  <span class="input-group-text text-white bg-bleunuit"
+                    >Pays</span
+                  >
                 </div>
                 <select class="custom-select" v-model="participant.nationalite">
                   <option selected disabled>Sélectionner un Pays</option>
@@ -87,8 +84,8 @@
         </div>
 
         <div class="card-footer">
-          <button type="submit" class="btn btn-dark float-left">Créer</button>
-          <button class="btn btn-dark float-right">
+          <button type="submit" class="btn float-left">Créer</button>
+          <button class="btn float-right bg-bleunuit">
             <router-link to="/participants">Cancel</router-link>
           </button>
         </div>
@@ -129,7 +126,6 @@ export default {
       participant: {
         // Le participant à créer
         nom: null, // son nom
-        prenom: null, // son prénom
         photo: null, // sa photo (nom du fichier)
         naissance: null, // sa date de naissance
         nationalite: null, // sa nationalité
@@ -160,7 +156,7 @@ export default {
           id: doc.id,
           ...doc.data(),
         }));
-        console.log("Liste des pays", this.listePays);
+        //console.log("Liste des pays", this.listePays);
       });
     },
 
@@ -197,7 +193,7 @@ export default {
       // Upload de l'image sur le Cloud Storage
       await uploadString(refStorage, this.imageData, "data_url").then(
         (snapshot) => {
-          console.log("Uploaded a base64 string");
+          //console.log("Uploaded a base64 string");
 
           // Création du participant sur le Firestore
           const db = getFirestore();

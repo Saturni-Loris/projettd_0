@@ -84,13 +84,13 @@
     <div class="pb-4 pt-16">
       <hr class="my-2 mx-6 border-t-2 bg-jaune" />
 
-      <h1 class="text-rougewerplay p-8 text-center text-3xl font-bold">
+      <h3 class="text-rougewerplay p-8 text-center text-3xl font-bold">
         Abonnes-toi pour ne rien manquer !
-      </h1>
-      <h1 class="pr-8 pl-8 text-center text-sm font-medium">
+      </h3>
+      <h4 class="pr-8 pl-8 text-center text-sm font-medium">
         Abonnes-toi pour recevoir toutes les actualités et news du festival
         Night of Republique en avant-première!
-      </h1>
+      </h4>
     </div>
 
     <form class="items-center justify-center p-8">
@@ -229,10 +229,10 @@
     </div>
 
     <div>
-      <h1 class="py-12 pr-12 text-center text-3xl font-bold">
+      <h2 class="py-12 pr-12 text-center text-3xl font-bold">
         <span class="">C'est quoi?</span>
-      </h1>
-      <h1 class="pr-16 pl-16 pb-12 text-center text-sm font-medium">
+      </h2>
+      <h3 class="pr-16 pl-16 pb-12 text-center text-sm font-medium">
         Un festival regroupant les artistes les plus émergent du rap français,
         francophone, et mondial ! Se déroulant sur la place de la république
         d’Angers. Celui-ci dure 1 semaine ! (attention à la fatigue ...)
@@ -244,7 +244,7 @@
         <br />
         <br />
         Alors ? On attend quoi pour nous rejoindre ?
-      </h1>
+      </h3>
 
       <RouterLink to="festival" class="hover:no-underline">
         <lireplus class="mx-20 sm:mx-52 md:mx-72 xl:mx-96 2xl:mx-96" />

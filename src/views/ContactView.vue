@@ -14,9 +14,9 @@
       <h1 class="text-3xl font-bold">
         OÙ SOMMES<span class="text-jaune">-</span>NOUS?
       </h1>
-      <h1 class="p-3 text-sm font-medium">
+      <h2 class="p-3 text-sm font-medium">
         Place de la République, 49100 Angers, France.
-      </h1>
+      </h2>
     </div>
 
     <div class="grid place-items-center p-4">

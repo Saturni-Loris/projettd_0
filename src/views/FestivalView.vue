@@ -4,7 +4,7 @@
       <h1 class="py-12 pr-12 text-right text-3xl font-bold">
         <span class="text-rougewerplay">NIGHT OF REPUBLIQUE FESTIVAL</span>
       </h1>
-      <h1 class="pr-16 pl-16 text-right text-sm font-medium">
+      <h2 class="pr-16 pl-16 text-right text-sm font-medium">
         Découvrez de
         <span class="text-rougewerplay">nombreux terrains </span> libres d’accès
         grâce à WerPlay. La plateforme vous offre aussi la possibilité de
@@ -13,7 +13,7 @@
         Grâce à votre localisation ou aux différents filtres proposés, la
         recherche de la partie qu’il vous faut est un
         <span class="text-rougewerplay">jeu d’enfant</span>.
-      </h1>
+      </h2>
 
       <div class="grid place-items-center">
         <img
@@ -30,12 +30,12 @@
           >C’EST QUAND LE NIGHT OF REPUBLIQUE</span
         >
       </h1>
-      <h1 class="pl-16 pr-16 text-sm font-medium">
+      <h2 class="pl-16 pr-16 text-sm font-medium">
         Mois de juillet (moment de l’année où il fait le plus chaud la nuit).
         Pendant 1 semaine (du samedi 23/22 au samedi 30/22). Débute dans les
         alentours de 21h00 (heure du début du coucher de soleil). Et se fini
         dans les alentours de 3h00 du matin.
-      </h1>
+      </h2>
 
       <div class="grid place-items-center">
         <img
@@ -50,9 +50,9 @@
       <h1 class="pr-12 pb-6 text-right text-2xl font-bold">
         <span class="text-rougewerplay">C’EST OÙ?</span>
       </h1>
-      <h1 class="pr-16 pl-16 text-right text-sm font-medium">
+      <h2 class="pr-16 pl-16 text-right text-sm font-medium">
         Le festival se situe sur la Place de La République à Angers.
-      </h1>
+      </h2>
 
       <div class="grid place-items-center">
         <img

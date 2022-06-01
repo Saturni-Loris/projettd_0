@@ -185,7 +185,7 @@ export default {
       const dbPays = collection(firestore, "pays");
       // Liste des pays synchronisée
       const query = await onSnapshot(dbPays, (snapshot) => {
-        console.log("query", query);
+        //console.log("query", query);
         //  Récupération des résultats dans listePaysSynchro
         // On utilse map pour récupérer l'intégralité des données renvoyées
         // on identifie clairement le id du document
@@ -194,7 +194,7 @@ export default {
           id: doc.id,
           ...doc.data(),
         }));
-        console.log("listepays", this.listePays);
+        //console.log("listepays", this.listePays);
       });
     },
 
@@ -209,7 +209,7 @@ export default {
       const docRef = await addDoc(dbPays, {
         nom: this.nom,
       });
-      console.log("document créé avec le id : ", docRef.id);
+      //console.log("document créé avec le id : ", docRef.id);
     },
 
     async updatePays(pays) {

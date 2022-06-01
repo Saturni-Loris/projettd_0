@@ -1,12 +1,12 @@
 <template>
   <div class="container">
-    <form enctype="multipart/form-data" @submit.prevent="deleteParticipant">
+    <form enctype="multipart/form-data " @submit.prevent="deleteParticipant">
       <div class="card bg-dark">
-        <div class="card-header">
-          <h5 style="color: white">Suppression d'un participant</h5>
+        <div class="card-header bg-bleunuit">
+          <h5 class="">Suppression d'un participant au festival</h5>
         </div>
 
-        <div class="card-body">
+        <div class="card-body bg-white">
           <div class="row">
             <div class="col-6">
               <div class="text-center">
@@ -17,7 +17,9 @@
             <div class="col-6">
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text">Nom</span>
+                  <span class="input-group-text text-white bg-bleunuit"
+                    >Nom</span
+                  >
                 </div>
                 <input
                   class="form-control"
@@ -29,7 +31,9 @@
               <br />
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text">Prénom</span>
+                  <span class="input-group-text text-white bg-bleunuit"
+                    >Prénom</span
+                  >
                 </div>
                 <input
                   class="form-control"
@@ -41,7 +45,9 @@
               <br />
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text">Date naissance</span>
+                  <span class="input-group-text text-white bg-bleunuit"
+                    >Date naissance</span
+                  >
                 </div>
                 <input
                   type="date"
@@ -54,7 +60,9 @@
               <br />
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text">Pays</span>
+                  <span class="input-group-text text-white bg-bleunuit"
+                    >Pays</span
+                  >
                 </div>
                 <input
                   class="form-control"
@@ -72,12 +80,15 @@
           </h5>
         </div>
 
-        <div class="card-footer">
-          <button type="submit" class="btn btn-dark float-left">
+        <div class="card-footer bg-white">
+          <button
+            type="submit"
+            class="btn float-left border-bleunuit text-bleunuit"
+          >
             Supprimer
           </button>
-          <button class="btn btn-dark float-right">
-            <RouterLink to="/participants">Cancel</RouterLink>
+          <button class="btn text-white float-right bg-bleunuit">
+            <RouterLink to="/participants ">Cancel</RouterLink>
           </button>
         </div>
       </div>
@@ -135,7 +146,7 @@ export default {
     // Récupération du id passé en paramètre
     // On utilise le id passé par la route
     // via la variable système $route de la vue
-    console.log("id participant", this.$route.params.id);
+    //console.log("id participant", this.$route.params.id);
     // Recherche participant concerné
     this.getParticipant(this.$route.params.id);
   },
