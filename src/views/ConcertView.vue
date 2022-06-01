@@ -22,7 +22,7 @@
           date="26 juill."
           description="Isham, Dak, GreenZer et d’autres"
           nom="6Jays, Travs ..."
-          image="/public/concert/jordon-conner-tIr-PWgSYB4-unsplash-1.png"
+          image="concert/jordon-conner-tIr-PWgSYB4-unsplash-1.png"
         />
       </div>
 
@@ -32,7 +32,7 @@
           date="27 juill."
           description="Loris, Jonas, Hugo, Arhur et d’autres"
           nom="Gaaris, Zak ..."
-          image="/public/concert/jordon-conner-tIr-PWgSYB4-unsplash-2.png"
+          image="concert/jordon-conner-tIr-PWgSYB4-unsplash-2.png"
         />
       </div>
 
@@ -42,7 +42,7 @@
           date="28 juill."
           description="Ziak, DTF, GreenZer et d’autres "
           nom="Mala, Bem ..."
-          image="/public/concert/jordon-conner-tIr-PWgSYB4-unsplash-3.png"
+          image="concert/jordon-conner-tIr-PWgSYB4-unsplash-3.png"
         />
       </div>
 
@@ -52,7 +52,7 @@
           date="29 juill."
           description="John, Ricardo, Bia et d’autres"
           nom="Isham, FujiPe ..."
-          image="/public/concert/jordon-conner-tIr-PWgSYB4-unsplash-4.png"
+          image="concert/jordon-conner-tIr-PWgSYB4-unsplash-4.png"
         />
       </div>
 
@@ -62,7 +62,7 @@
           date="31 juill."
           description="Zun, Sun, RedColdChilliPaper et d’autres "
           nom="Dams, veld ..."
-          image="/public/concert/jordon-conner-tIr-PWgSYB4-unsplash-5.png"
+          image="concert/jordon-conner-tIr-PWgSYB4-unsplash-5.png"
         />
       </div>
 
@@ -72,7 +72,7 @@
           date="30 juill."
           description="Ima, Dakar, GuideDeMontbe et d’autres"
           nom="Vald, Sas ..."
-          image="/public/concert/jordon-conner-tIr-PWgSYB4-unsplash.png"
+          image="concert/jordon-conner-tIr-PWgSYB4-unsplash.png"
         />
       </div>
     </div>

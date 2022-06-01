@@ -103,7 +103,7 @@
       </div>
     </div>
 
-    <div class="px-28">
+    <div class="px-28 hover:text-jaune hover:no-underline">
       <RouterLink to="/programmation">
         <div
           class="

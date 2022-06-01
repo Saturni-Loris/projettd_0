@@ -39,7 +39,10 @@
 
         <h3 class="text-gray-400 text-base leading-8">{{ description }}</h3>
         <hr class="my-2 border-jaune" />
-        <lireplus />
+
+        <RouterLink to="evenement" class="hover:text-jaune hover:no-underline">
+          <lireplus />
+        </RouterLink>
       </div>
     </figcaption>
   </figure>

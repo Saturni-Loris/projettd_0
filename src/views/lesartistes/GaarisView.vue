@@ -10,7 +10,7 @@
         <RouterLink to="/gaaris">
           <cardartiste
             name="Gaaris"
-            image="/public/Gaaris.png"
+            image="artistes/Gaaris.png"
             date="27"
             jour="juill."
         /></RouterLink>
@@ -87,7 +87,9 @@
             text-bleunuit
           "
         >
-          <RouterLink to="artistes">TOUT LES ARTISTES </RouterLink>
+          <RouterLink to="artistes" class="hover:text-jaune hover:no-underline">
+            TOUT LES ARTISTES
+          </RouterLink>
         </p>
       </div>
     </div>
