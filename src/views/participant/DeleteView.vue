@@ -83,28 +83,18 @@
 // Bibliothèque Firestore : import des fonctions
 import { 
     getFirestore, 
-    collection, 
     doc, 
     getDoc,
-    getDocs, 
-    addDoc, 
-    updateDoc, 
-    setDoc,
     deleteDoc, 
-    onSnapshot, 
-    query,
-    orderBy
-    } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
+} from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
 
 // Storage
 import { 
     getStorage, 
     ref, 
     getDownloadURL, 
-    uploadBytes,
-    uploadString,
-    deleteObject,
-    listAll } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js'
+    deleteObject
+} from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js'
 
 
 export default {
@@ -127,7 +117,7 @@ export default {
         // Récupération du id passé en paramètre
         // On utilise le id passé par la route
         // via la variable système $route de la vue
-//console.log("id participant", this.$route.params.id);
+console.log("id participant", this.$route.params.id);
         // Recherche participant concerné
         this.getParticipant(this.$route.params.id);
     },
@@ -150,7 +140,7 @@ export default {
                 this.photoActuelle = this.participant.photo;
             }else{
                 // Sinon simple message d'erreur
-                //this.console.log("Participant inexistant");
+                this.console.log("Participant inexistant");
             }
             // Obtenir le Storage
             const storage = getStorage();

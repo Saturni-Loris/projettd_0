@@ -1,14 +1,15 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+
+// Import de mitt
+import mitt from 'mitt';
 import './index.css'
 
-import mitt from 'mitt';
-
-
+// Import fonction d'initialisation du SDK Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js";
 
-
+// Votre configuration de Firebase
 const firebaseConfig = {
     apiKey: "AIzaSyBv02bojacjY7YxDV1vj4fxIul2WmNhBPY",
     authDomain: "fir-vuejs3-5cc46.firebaseapp.com",
@@ -18,11 +19,15 @@ const firebaseConfig = {
     appId: "1:1071770248092:web:6d17bf12e4895d5305de59"
 };
 
+// Initialize Firebase
 const appFirebase = initializeApp(firebaseConfig);
 
 const app = createApp(App)
 
+// Création d'un emetteur mitt exportable
 export const emitter = mitt();
+// créer l'émetteur comme propriété globale
+// de l'application
 app.config.globalProperties.emitter = emitter;
 
 app.use(router)
