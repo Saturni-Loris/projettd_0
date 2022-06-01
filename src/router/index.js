@@ -14,7 +14,6 @@ import CreateParticipant from '../views/participant/CreateView.vue'
 import UpdateParticipant from '../views/participant/UpdateView.vue'
 import DeleteParticipant from '../views/participant/DeleteView.vue'
 
-
 import ConcertView from '../views/ConcertView.vue'
 
 
