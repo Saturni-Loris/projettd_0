@@ -101,11 +101,11 @@ import Card from "./components/card.vue";
 
               <hr class="my-2 border-t-2 bg-jaune" />
 
-              <div class="dropdown-item bg-bleunuit">
-                <RouterLink to="/participants"
-                  >Nouveau rappeur participants</RouterLink
-                >
+              <div class="dropdown-item">
+                <RouterLink to="/pays">Pays</RouterLink>
               </div>
+
+              <hr class="my-2 border-t-2 bg-jaune" />
             </div>
           </li>
         </ul>

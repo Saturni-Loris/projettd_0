@@ -8,11 +8,8 @@ import MoncompteView from '../views/MoncompteView.vue'
 
 import RappeurView from '../views/admin/RappeurView.vue'
 import EvenementView from '../views/admin/EvenementView.vue'
+import ListeView from '../views/admin/ListeView.vue'
 
-import ListeParticipant from '../views/participant/ListeView.vue'
-import CreateParticipant from '../views/participant/CreateView.vue'
-import UpdateParticipant from '../views/participant/UpdateView.vue'
-import DeleteParticipant from '../views/participant/DeleteView.vue'
 
 
 import ConcertView from '../views/ConcertView.vue'
@@ -58,10 +55,8 @@ const router = createRouter({
     { path: '/evenement', name: 'EvenementView', component: EvenementView },
     { path: '/rappeur', name: 'RappeurView', component: RappeurView },
 
-    { path: '/participants', name: 'ListeParticipant', component: ListeParticipant, beforeEnter: guard },
-    { path: '/createParticipant', name: 'CreateParticipant', component: CreateParticipant, beforeEnter: guard },
-    { path: '/updateParticipant/:id', name: 'UpdateParticipant', component: UpdateParticipant, beforeEnter: guard },
-    { path: '/deleteParticipant/:id', name: 'DeleteParticipant', component: DeleteParticipant, beforeEnter: guard },
+    { path: '/pays', name: 'ListeView', component: ListeView },
+
 
 
 
