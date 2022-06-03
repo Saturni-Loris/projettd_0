@@ -95,7 +95,6 @@ const router = createRouter({
 
   ]
 })
-
 // On créé un guard : Observateur (fonction) permettant de savoir si un utilisateur
 // a le droit d'utiliser une route
 // paramètres : to : d'où il vient, from où il veut aller, next où il doit aller après contrôle
@@ -136,6 +135,7 @@ function guard(to, from, next) {
 }
 
 export default router
+
 
 
 

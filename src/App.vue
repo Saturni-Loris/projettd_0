@@ -81,7 +81,6 @@ import Card from "./components/card.vue";
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              v-if="isAdmin"
             >
               Administration
             </a>
@@ -174,7 +173,7 @@ import Card from "./components/card.vue";
                   class="
                     hover:font-semibold hover:text-jaune hover:no-underline
                   "
-                  >Le festival</a
+                  >NR festival</a
                 >
               </li>
             </ul>
